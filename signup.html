@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta Information -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Expense Hub</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Remix Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+          rel="stylesheet">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- Signup Section Starts -->
+    <!-- ========================= -->
+
+    <section class="login-page">
+
+        <div class="container">
+
+            <div class="login-wrapper">
+
+                <!-- Left Side -->
+
+                <div class="login-left">
+
+                    <div class="brand">
+
+                        <i class="ri-wallet-3-fill"></i>
+
+                        <h1>Expense Hub</h1>
+
+                    </div>
+
+                    <h2>
+
+                        Create Your Account
+
+                    </h2>
+
+                    <p>
+
+                        Join Expense Hub to securely manage
+                        your daily expenses, access your account
+                        from multiple devices, and generate
+                        professional monthly PDF reports.
+
+                    </p>
+
+                    <ul class="login-features">
+
+                        <li>
+
+                            <i class="ri-check-line"></i>
+
+                            Unlimited Expense Records
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-check-line"></i>
+
+                            Automatic Date & Time
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-check-line"></i>
+
+                            Secure Cloud Sync
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-check-line"></i>
+
+                            Monthly PDF Reports
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Right Side -->
+
+                <div class="login-right">
+
+                    <div class="login-card">
+
+                        <h2>
+
+                            Create Account
+
+                        </h2>
+
+                        <p>
+
+                            Fill in your details below.
+
+                        </p>
+
+                        <form id="signupForm">
+
+                            <div class="input-group">
+
+                                <label for="fullName">
+
+                                    Full Name
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    placeholder="Enter your full name"
+                                    required>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label for="signupEmail">
+
+                                    Email Address
+
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="signupEmail"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label for="signupPassword">
+
+                                    Password
+
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="signupPassword"
+                                    placeholder="Create a password"
+                                    required>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label for="confirmPassword">
+
+                                    Confirm Password
+
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    placeholder="Confirm your password"
+                                    required>
+
+                            </div>
+                            <div class="signup-options">
+
+                                <label class="remember-me">
+
+                                    <input
+                                        type="checkbox"
+                                        id="acceptTerms"
+                                        required>
+
+                                    <span>
+
+                                        I agree to the Terms &
+                                        Conditions and Privacy Policy
+
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary login-btn">
+
+                                <i class="ri-user-add-line"></i>
+
+                                Create Account
+
+                            </button>
+
+                        </form>
+
+                        <div class="login-footer">
+
+                            <p>
+
+                                Already have an account?
+
+                                <a href="login.html">
+
+                                    Login Now
+
+                                </a>
+
+                            </p>
+
+                            <a href="index.html"
+                               class="back-home">
+
+                                <i class="ri-arrow-left-line"></i>
+
+                                Back to Home
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Signup Section Ends -->
+    <!-- ========================= -->
+
+    <script type="module" src="firebase.js"></script>
+<script type="module" src="script-local.js"></script>
+
+</body>
+
+</html>

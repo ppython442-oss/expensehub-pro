@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta Information -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Monthly Report | Expense Hub</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Remix Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- Report Header -->
+    <!-- ========================= -->
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a href="dashboard.html" class="logo">
+
+                <i class="ri-wallet-3-fill"></i>
+
+                <div class="logo-text">
+
+                    <span>Expense Hub</span>
+
+                    <small>Developed by Saim Amin</small>
+
+                </div>
+
+            </a>
+
+            <a href="dashboard.html"
+               class="btn btn-secondary">
+
+                <i class="ri-arrow-left-line"></i>
+
+                Dashboard
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- Report Main -->
+    <!-- ========================= -->
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <div class="dashboard-title">
+
+                <h1>
+
+                    Monthly Expense Report
+
+                </h1>
+
+                <p>
+
+                    Review your monthly expense summary
+                    and download a professional PDF report
+                    with one click.
+
+                </p>
+
+            </div>
+
+            <!-- Report Summary -->
+
+            <div class="dashboard-cards">
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+
+                        <i class="ri-calendar-2-fill"></i>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Current Month</h3>
+
+                        <h2 id="reportMonth">
+
+                            July 2026
+
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+
+                        <i class="ri-money-dollar-circle-fill"></i>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Total Expense</h3>
+
+                        <h2 id="reportTotal">
+
+                            Rs. 0
+
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+
+                        <i class="ri-file-list-3-fill"></i>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Total Records</h3>
+
+                        <h2 id="reportRecords">
+
+                            0
+
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Report Preview -->
+
+            <section class="monthly-summary">
+
+                <div class="summary-box">
+
+                    <h2>
+
+                        Report Preview
+
+                    </h2>
+
+                    <p>
+
+                        Your expense report will automatically
+                        display here after expenses are added.
+
+                    </p>
+
+                    <div id="reportPreview">
+                        <!-- Empty Report State -->
+
+                        <div class="history-item">
+
+                            <div class="history-left">
+
+                                <span class="history-number">
+
+                                    <i class="ri-file-search-line"></i>
+
+                                </span>
+
+                                <div>
+
+                                    <h4>
+
+                                        No Report Available
+
+                                    </h4>
+
+                                    <p>
+
+                                        Add expenses from your dashboard.
+                                        Your monthly report will be generated
+                                        automatically and will be ready for
+                                        PDF download.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="summary-buttons">
+
+                        <button
+                            type="button"
+                            id="downloadPDF"
+                            class="btn btn-primary">
+
+                            <i class="ri-file-pdf-2-fill"></i>
+<button
+    type="button"
+    id="generateReport"
+    class="btn btn-secondary">
+
+    <i class="ri-bar-chart-line"></i>
+
+    Generate Report
+
+</button>
+                            Download PDF
+
+                        </button>
+
+                        <a href="history.html"
+                           class="btn btn-secondary">
+
+                            <i class="ri-history-line"></i>
+
+                            View History
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- ========================= -->
+    <!-- Report Footer -->
+    <!-- ========================= -->
+
+    <footer class="dashboard-footer">
+
+        <div class="container">
+
+            <p>
+
+                © 2026 Expense Hub |
+                Developed by
+                <strong>Saim Amin</strong>
+
+            </p>
+
+        </div>
+
+    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+
+    <!-- JavaScript -->
+
+    <script type="module" src="script-local.js"></script>
+
+</body>
+
+</html>

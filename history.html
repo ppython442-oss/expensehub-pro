@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta Information -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Expense History | Expense Hub</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Remix Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- History Header -->
+    <!-- ========================= -->
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a href="dashboard.html" class="logo">
+
+                <i class="ri-wallet-3-fill"></i>
+
+                <div class="logo-text">
+
+                    <span>Expense Hub</span>
+
+                    <small>Developed by Saim Amin</small>
+
+                </div>
+
+            </a>
+
+            <a href="dashboard.html"
+               class="btn btn-secondary">
+
+                <i class="ri-arrow-left-line"></i>
+
+                Dashboard
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- History Main -->
+    <!-- ========================= -->
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <div class="dashboard-title">
+
+                <h1>
+
+                    Expense History
+
+                </h1>
+
+                <p>
+
+                    View all your expense records with
+                    automatic numbering, date, time,
+                    daily totals and monthly summary.
+
+                </p>
+
+            </div>
+
+            <!-- Search Box -->
+
+            <div class="add-expense-card">
+
+                <div class="input-group">
+
+                    <label for="searchExpense">
+
+                        Search Expense
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="searchExpense"
+                        placeholder="Search by expense name...">
+
+                </div>
+
+            </div>
+
+            <!-- History Container -->
+
+            <section class="today-history">
+
+                <div class="section-heading">
+
+                    <h2>
+
+                        All Expense Records
+
+                    </h2>
+
+                    <p>
+
+                        Your expense history will
+                        automatically appear below.
+
+                    </p>
+
+                </div>
+
+                <div id="expenseHistory">
+                    <!-- Empty State -->
+
+                    <div class="history-item empty-history">
+
+                        <div class="history-left">
+
+                            <span class="history-number">
+
+                                <i class="ri-inbox-line"></i>
+
+                            </span>
+
+                            <div>
+
+                                <h4>
+
+                                    No Expense History Found
+
+                                </h4>
+
+                                <p>
+
+                                    Start adding expenses from your
+                                    dashboard. Your complete history
+                                    will automatically appear here.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ========================= -->
+            <!-- Monthly Summary -->
+            <!-- ========================= -->
+
+            <section class="monthly-summary">
+
+                <div class="summary-box">
+
+                    <h2>
+
+                        Monthly Expense Summary
+
+                    </h2>
+
+                    <p>
+
+                        Your monthly total, daily records and complete
+                        expense history will be calculated automatically
+                        after you start adding expenses.
+
+                    </p>
+
+                    <div class="dashboard-cards">
+
+                        <div class="dashboard-card">
+
+                            <div class="card-icon">
+
+                                <i class="ri-money-dollar-circle-fill"></i>
+
+                            </div>
+
+                            <div class="card-content">
+
+                                <h3>This Month</h3>
+
+                                <h2 id="historyMonthTotal">
+
+                                    Rs. 0
+
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <div class="dashboard-card">
+
+                            <div class="card-icon">
+
+                                <i class="ri-file-list-3-fill"></i>
+
+                            </div>
+
+                            <div class="card-content">
+
+                                <h3>Total Records</h3>
+
+                                <h2 id="historyRecordCount">
+
+                                    0
+
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="summary-buttons">
+
+                        <a href="report.html"
+                           class="btn btn-primary">
+
+                            <i class="ri-file-pdf-2-fill"></i>
+
+                            Download PDF
+
+                        </a>
+
+                        <a href="dashboard.html"
+                           class="btn btn-secondary">
+
+                            <i class="ri-arrow-left-line"></i>
+
+                            Back to Dashboard
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+
+    <footer class="dashboard-footer">
+
+        <div class="container">
+
+            <p>
+
+                © 2026 Expense Hub |
+                Developed by
+                <strong>Saim Amin</strong>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="script-local.js"></script>
+
+</body>
+
+</html>

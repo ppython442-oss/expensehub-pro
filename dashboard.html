@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Dashboard | Expense Hub</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- Dashboard Header Starts -->
+    <!-- ========================= -->
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <!-- Logo -->
+
+            <a href="index.html" class="logo">
+
+                <i class="ri-wallet-3-fill"></i>
+
+                <div class="logo-text">
+
+                    <span>Expense Hub</span>
+
+                    <small>Developed by Saim Amin</small>
+
+                </div>
+
+            </a>
+
+            <!-- User Profile -->
+
+            <div class="user-profile">
+
+                <div class="user-info">
+
+                    <span class="welcome-text">
+                        Welcome Back,
+                    </span>
+
+                    <!-- Login ke baad JavaScript yahan user ka naam show karegi -->
+
+                    <h3 id="userName">
+                        User Name
+                    </h3>
+
+                </div>
+
+                <div class="user-avatar">
+
+                    <i class="ri-user-3-fill"></i>
+
+                </div>
+
+                <a href="index.html" class="logout-btn">
+
+                    <i class="ri-logout-box-r-line"></i>
+
+                    Logout
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- Dashboard Header Ends -->
+    <!-- ========================= -->
+
+    <!-- ========================= -->
+    <!-- Dashboard Main -->
+    <!-- ========================= -->
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <!-- Dashboard Title -->
+
+            <div class="dashboard-title">
+
+                <h1>Expense Dashboard</h1>
+
+                <p>
+
+                    Track your daily expenses,
+                    monitor your monthly spending,
+                    and manage everything from one place.
+
+                </p>
+
+            </div>
+
+            <!-- Summary Cards -->
+
+            <div class="dashboard-cards">
+
+                <!-- Today's Expense -->
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+
+                        <i class="ri-calendar-check-fill"></i>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Today's Expense</h3>
+
+                        <h2 id="todayExpense">
+
+                            Rs. 0
+
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <!-- Monthly Expense -->
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+
+                        <i class="ri-calendar-2-fill"></i>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>This Month</h3>
+
+                        <h2 id="monthExpense">
+
+                            Rs. 0
+
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <!-- Total Expense -->
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+
+                        <i class="ri-funds-fill"></i>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Total Expenses</h3>
+
+                        <h2 id="totalExpense">
+
+                            Rs. 0
+
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div> 
+            <!-- ========================= -->
+            <!-- Add Expense Section Starts -->
+            <!-- ========================= -->
+
+            <section class="add-expense">
+
+                <div class="add-expense-card">
+
+                    <div class="section-heading">
+
+                        <h2>Add New Expense</h2>
+
+                        <p>
+                            Enter the expense name and amount.
+                            Date and time will be saved automatically.
+                        </p>
+
+                    </div>
+
+                    <form id="expenseForm">
+
+                        <div class="input-group">
+
+                            <label for="expenseName">
+                                Expense Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="expenseName"
+                                placeholder="Example: Petrol, Grocery, Lunch"
+                                required>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label for="expenseAmount">
+                                Amount (Rs.)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="expenseAmount"
+                                placeholder="Enter Amount"
+                                min="1"
+                                required>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary add-btn">
+
+                            <i class="ri-add-circle-fill"></i>
+
+                            Add Expense
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+            <!-- ========================= -->
+            <!-- Add Expense Section Ends -->
+            <!-- ========================= -->
+
+
+
+            <!-- ========================= -->
+            <!-- Quick Actions Starts -->
+            <!-- ========================= -->
+
+            <section class="quick-actions">
+
+                <a href="history.html" class="action-card">
+
+                    <i class="ri-history-line"></i>
+
+                    <h3>View History</h3>
+
+                    <p>See all previous expenses.</p>
+
+                </a>
+
+                <a href="report.html" class="action-card">
+
+                    <i class="ri-file-pdf-2-fill"></i>
+
+                    <h3>Monthly Report</h3>
+
+                    <p>Download your PDF report.</p>
+
+                </a>
+
+            </section>
+
+            <!-- ========================= -->
+            <!-- Quick Actions Ends -->
+            <!-- ========================= -->
+
+
+
+            <!-- ========================= -->
+            <!-- Today's Expense History -->
+            <!-- ========================= -->
+
+            <section class="today-history">
+
+                <div class="section-heading">
+
+                    <h2>Today's Expense History</h2>
+
+                    <p>
+
+                        All expenses added today will appear below.
+
+                    </p>
+
+                </div>
+
+                <div id="expenseHistory">
+
+                    <!-- JavaScript will generate all expense entries here -->
+
+                    <div class="history-item">
+
+                        <div class="history-left">
+
+                            <span class="history-number">
+
+                                1.
+
+                            </span>
+
+                            <div>
+
+                                <h4>Petrol</h4>
+
+                                <p>
+
+                                    01 July 2026
+                                    •
+                                    09:15 AM
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="history-right">
+
+                            Rs. 500
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section> 
+            <!-- ========================= -->
+            <!-- Recent Activity Starts -->
+            <!-- ========================= -->
+
+            <section class="recent-activity">
+
+                <div class="section-heading">
+
+                    <h2>Recent Activity</h2>
+
+                    <p>
+
+                        Your latest expense activities will appear here.
+
+                    </p>
+
+                </div>
+
+                <div class="activity-card">
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon">
+
+                            <i class="ri-checkbox-circle-fill"></i>
+
+                        </div>
+
+                        <div class="activity-content">
+
+                            <h4>No Recent Activity</h4>
+
+                            <p>
+
+                                Your latest expense updates
+                                will automatically appear here.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ========================= -->
+            <!-- Recent Activity Ends -->
+            <!-- ========================= -->
+
+
+
+            <!-- ========================= -->
+            <!-- Monthly Summary Starts -->
+            <!-- ========================= -->
+
+            <section class="monthly-summary">
+
+                <div class="summary-box">
+
+                    <h2>Monthly Summary</h2>
+
+                    <p>
+
+                        View your monthly expense summary
+                        and generate a professional PDF report
+                        with one click.
+
+                    </p>
+
+                    <div class="summary-buttons">
+
+                        <a href="report.html"
+                           class="btn btn-primary">
+
+                            <i class="ri-file-pdf-2-fill"></i>
+
+                            Download PDF
+
+                        </a>
+
+                        <a href="history.html"
+                           class="btn btn-secondary">
+
+                            <i class="ri-history-line"></i>
+
+                            View Full History
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- ========================= -->
+    <!-- Dashboard Main Ends -->
+    <!-- ========================= -->
+
+
+
+    <!-- ========================= -->
+    <!-- Dashboard Footer Starts -->
+    <!-- ========================= -->
+
+    <footer class="dashboard-footer">
+
+        <div class="container">
+
+            <p>
+
+                © 2026 Expense Hub |
+                Developed by
+                <strong>Saim Amin</strong>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script type="module" src="script-local.js"></script>
+
+</body>
+
+</html>
