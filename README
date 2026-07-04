@@ -1,0 +1,43 @@
+# ExpenseHub Pro 💰
+
+ExpenseHub Pro is a modern expense management web application developed using HTML, CSS, JavaScript and Firebase.
+
+## Features
+
+- User Login & Signup
+- Firebase Authentication
+- Add Expenses
+- Edit Expenses
+- Delete Expenses
+- Search Expenses
+- Expense History
+- Monthly Expense Report
+- PDF Report Download
+- Responsive Dashboard
+- Firebase Hosting
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Firebase Authentication
+- Firebase Firestore
+- Firebase Hosting
+- jsPDF
+
+## Live Demo
+
+https://extensehub.web.app/
+
+## GitHub Repository
+
+https://github.com/ppython442-oss/expensehub-pro
+
+## Developer
+
+**Saim Amin**
+
+---
+
+© 2026 ExpenseHub Pro
