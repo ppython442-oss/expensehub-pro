@@ -1,427 +1,247 @@
-<!-- Logo -->
+<!DOCTYPE html>
+<html lang="en">
 
-<a href="#" class="logo">
-    <i class="ri-wallet-3-fill"></i>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expense Hub - Smart Daily Expense Tracker">
+    <meta name="keywords" content="Expense Tracker, Expense Hub, Money Manager">
+    <meta name="author" content="Saim Amin">
 
-    <div class="logo-text">
-        <span>Expense Hub</span>
-        <small>Developed by Saim Amin</small>
-    </div>
-</a>
-            <!-- ========================= -->
-            <!-- Hero Content -->
-            <!-- ========================= -->
+    <title>Expense Hub | Smart Daily Expense Tracker</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Expense Hub">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="ri-wallet-3-fill"></i>
+                <div class="logo-text">
+                    <span>Expense Hub</span>
+                    <small>Developed by Saim Amin</small>
+                </div>
+            </a>
+
+            <nav class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="#features">Features</a>
+                <a href="#history">History</a>
+                <a href="#reports">Reports</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
             <div class="hero-content">
-
                 <div class="hero-text">
-
-                    <span class="hero-badge">
-                        Smart Daily Expense Tracker
-                    </span>
-
+                    <span class="hero-badge">Smart Daily Expense Tracker</span>
                     <h1>
                         Track Every Rupee,
                         <span>Anytime, Anywhere.</span>
                     </h1>
-
                     <p>
                         Expense Hub helps you record your daily expenses with
                         automatic date and time, view today's spending, monthly
                         totals, complete history, and generate professional PDF
                         reports—all from one secure account.
                     </p>
-
                     <div class="hero-buttons">
-
-                        <a href="signup.html" class="btn btn-primary">
-                            Get Started
-                        </a>
-
-                        <a href="login.html" class="btn btn-secondary">
-                            Login
-                        </a>
-
+                        <a href="signup.html" class="btn btn-primary">Get Started</a>
+                        <a href="login.html" class="btn btn-secondary">Login</a>
                     </div>
-
                 </div>
-
-                <!-- ========================= -->
-                <!-- Hero Cards -->
-                <!-- ========================= -->
 
                 <div class="hero-cards">
-
                     <div class="summary-card">
-
                         <i class="ri-calendar-check-fill"></i>
-
                         <h3>Today's Expense</h3>
-
                         <h2>Rs. 0</h2>
-
                         <p>No expense added today.</p>
-
                     </div>
 
                     <div class="summary-card">
-
                         <i class="ri-calendar-2-fill"></i>
-
                         <h3>This Month</h3>
-
                         <h2>Rs. 0</h2>
-
                         <p>Monthly expense summary.</p>
-
                     </div>
 
                     <div class="summary-card">
-
                         <i class="ri-funds-fill"></i>
-
                         <h3>Total Expenses</h3>
-
                         <h2>Rs. 0</h2>
-
                         <p>Overall spending record.</p>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-    <!-- ========================= -->
-    <!-- Hero Section Ends -->
-    <!-- ========================= -->
-
-    <!-- Features Section Starts -->
     <section class="features" id="features">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>Why Expense Hub?</span>
-
                 <h2>Manage Your Daily Expenses With Ease</h2>
-
-                <p>
-                    A simple, secure and powerful expense tracker
-                    designed for everyday use.
-                </p>
-
+                <p>A simple, secure and powerful expense tracker designed for everyday use.</p>
             </div>
 
             <div class="features-grid"> 
-                <!-- Feature Card 1 -->
-
                 <div class="feature-card">
-
                     <i class="ri-time-fill"></i>
-
                     <h3>Automatic Date & Time</h3>
-
-                    <p>
-                        Every expense is automatically saved with
-                        the current date and time. No manual entry required.
-                    </p>
-
+                    <p>Every expense is automatically saved with the current date and time. No manual entry required.</p>
                 </div>
 
-                <!-- Feature Card 2 -->
-
                 <div class="feature-card">
-
                     <i class="ri-money-dollar-circle-fill"></i>
-
                     <h3>Daily Expense Tracking</h3>
-
-                    <p>
-                        Keep track of every expense throughout the day
-                        and instantly view your daily spending total.
-                    </p>
-
+                    <p>Keep track of every expense throughout the day and instantly view your daily spending total.</p>
                 </div>
 
-                <!-- Feature Card 3 -->
-
                 <div class="feature-card">
-
                     <i class="ri-history-fill"></i>
-
                     <h3>Complete History</h3>
-
-                    <p>
-                        View all previous expense records with
-                        automatic numbering, dates and times.
-                    </p>
-
+                    <p>View all previous expense records with automatic numbering, dates and times.</p>
                 </div>
 
-                <!-- Feature Card 4 -->
-
                 <div class="feature-card">
-
                     <i class="ri-calendar-check-fill"></i>
-
                     <h3>Monthly Summary</h3>
-
-                    <p>
-                        Monitor your monthly expenses and
-                        keep an organized financial record.
-                    </p>
-
+                    <p>Monitor your monthly expenses and keep an organized financial record.</p>
                 </div>
 
-                <!-- Feature Card 5 -->
-
                 <div class="feature-card">
-
                     <i class="ri-file-pdf-2-fill"></i>
-
                     <h3>PDF Reports</h3>
-
-                    <p>
-                        Generate professional monthly PDF reports
-                        whenever you need them.
-                    </p>
-
+                    <p>Generate professional monthly PDF reports whenever you need them.</p>
                 </div>
-
-                <!-- Feature Card 6 -->
 
                 <div class="feature-card">
-
                     <i class="ri-shield-check-fill"></i>
-
                     <h3>Secure Login</h3>
-
-                    <p>
-                        Login securely and access your expense
-                        history from different devices.
-                    </p>
-
+                    <p>Login securely and access your expense history from different devices.</p>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-    <!-- ========================= -->
-    <!-- Features Section Ends -->
-    <!-- ========================= -->
-
-    <!-- Expense History Preview -->
     <section class="history-preview" id="history">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>Expense History</span>
-
                 <h2>Daily Expense Records</h2>
-
-                <p>
-                    Every expense is stored with automatic
-                    numbering, date and time.
-                </p>
-
+                <p>Every expense is stored with automatic numbering, date and time.</p>
             </div>
 
             <div class="history-container"> 
-                <!-- Date Card -->
-
                 <div class="history-card">
-
                     <div class="history-header">
-
                         <h3>01 July 2026</h3>
-
                         <span>Today's Total : Rs. 1,850</span>
-
                     </div>
 
                     <div class="expense-list">
-
                         <div class="expense-item">
-
                             <span class="expense-number">1.</span>
-
                             <div class="expense-details">
-
                                 <h4>Petrol</h4>
-
                                 <p>Rs. 500</p>
-
                             </div>
-
-                            <span class="expense-time">
-                                09:15 AM
-                            </span>
-
+                            <span class="expense-time">09:15 AM</span>
                         </div>
 
                         <div class="expense-item">
-
                             <span class="expense-number">2.</span>
-
                             <div class="expense-details">
-
                                 <h4>Lunch</h4>
-
                                 <p>Rs. 700</p>
-
                             </div>
-
-                            <span class="expense-time">
-                                01:20 PM
-                            </span>
-
+                            <span class="expense-time">01:20 PM</span>
                         </div>
 
                         <div class="expense-item">
-
                             <span class="expense-number">3.</span>
-
                             <div class="expense-details">
-
                                 <h4>Groceries</h4>
-
                                 <p>Rs. 650</p>
-
                             </div>
-
-                            <span class="expense-time">
-                                07:45 PM
-                            </span>
-
+                            <span class="expense-time">07:45 PM</span>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-    <!-- ========================= -->
-    <!-- History Section Ends -->
-    <!-- ========================= -->
-
-    <!-- Reports Preview Section Starts -->
-
     <section class="reports-preview" id="reports">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>Monthly Reports</span>
-
                 <h2>Generate Professional PDF Reports</h2>
-
-                <p>
-
-                    Download your complete monthly expense
-                    report with one click.
-
-                </p>
-
+                <p>Download your complete monthly expense report with one click.</p>
             </div>
 
             <div class="report-box"> 
                 <div class="report-content">
-
                     <div class="report-icon">
-
                         <i class="ri-file-pdf-2-fill"></i>
-
                     </div>
-
                     <h3>Monthly PDF Report</h3>
-
                     <p>
                         Download your monthly expense history in a
                         clean and professional PDF format. Every report
                         includes dates, times, expense names, numbering,
-                        daily totals and monthly total.
+                        daily totals, and an overall calculated Total option.
                     </p>
-
                     <div class="report-buttons">
-
-                        <a href="login.html" class="btn btn-primary">
-                            Download PDF
-                        </a>
-
-                        <a href="signup.html" class="btn btn-secondary">
-                            Create Free Account
-                        </a>
-
+                        <a href="login.html" class="btn btn-primary">Download PDF</a>
+                        <a href="signup.html" class="btn btn-secondary">Create Free Account</a>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-    <!-- ========================= -->
-    <!-- Reports Section Ends -->
-    <!-- ========================= -->
-
-    <!-- Footer Starts -->
-
     <footer class="footer">
-
         <div class="container">
-
             <div class="footer-content">
-
                 <h2>Expense Hub</h2>
-
                 <p>
                     A modern and secure expense tracking web application
                     designed to help you manage your daily and monthly
                     expenses with ease.
                 </p>
-
                 <p class="developer">
-
                     Developed by <strong>Saim Amin</strong>
-
                 </p>
-
                 <p class="copyright">
-
                     © 2026 Expense Hub. All Rights Reserved.
-
                 </p>
-
             </div>
-
         </div>
-
     </footer>
 
-    <!-- Footer Ends -->
+    <script type="module" src="script-local.js"></script>
+</body>
 
-    <!-- J<script type="module" src="script-local.js">
-        
-    </script>avaScript -->
-    <body>
-
-</html> 
+</html>

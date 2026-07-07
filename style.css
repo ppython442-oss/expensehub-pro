@@ -1086,3 +1086,39 @@ section{
     }
 
 }
+/* ==========================================
+   Dark Theme Styles (Expense Hub)
+========================================== */
+html.dark body {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Dark mode mein cards aur tables ka background badalne ke liye */
+html.dark .login-card,
+html.dark .card, 
+html.dark .dashboard-card, 
+html.dark .expense-box,
+html.dark table {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border-color: #333333 !important;
+}
+
+/* Dark mode mein table ke rows ka design */
+html.dark td, html.dark th {
+    color: #e0e0e0 !important;
+    border-bottom: 1px solid #333333 !important;
+}
+
+/* Dark mode mein text inputs ko dark karne ke liye */
+html.dark input, html.dark select, html.dark textarea {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+    border: 1px solid #444444 !important;
+}
+
+/* Dark mode mein button ka icon suraj (sun) ban jaye */
+html.dark #themeToggleBtn i {
+    color: #ffca28 !important;
+}

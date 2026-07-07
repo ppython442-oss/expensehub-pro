@@ -2,244 +2,100 @@
 <html lang="en">
 
 <head>
-
-    <!-- Basic Meta Information -->
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Expense Hub</title>
 
-    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
-    <!-- Remix Icons -->
-
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-          rel="stylesheet">
-
-    <!-- Main CSS -->
-
-    <link rel="stylesheet"
-          href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ========================= -->
-    <!-- Login Section Starts -->
-    <!-- ========================= -->
-
     <section class="login-page">
-
         <div class="container">
-
             <div class="login-wrapper">
 
-                <!-- Left Side -->
-
                 <div class="login-left">
-
                     <div class="brand">
-
                         <i class="ri-wallet-3-fill"></i>
-
                         <h1>Expense Hub</h1>
-
                     </div>
-
-                    <h2>
-
-                        Welcome Back
-
-                    </h2>
-
+                    <h2>Welcome Back</h2>
                     <p>
-
                         Sign in to manage your daily expenses,
                         view your complete history,
                         generate monthly PDF reports,
                         and access your account from any device.
-
                     </p>
-
                     <ul class="login-features">
-
-                        <li>
-
-                            <i class="ri-check-line"></i>
-
-                            Daily Expense Tracking
-
-                        </li>
-
-                        <li>
-
-                            <i class="ri-check-line"></i>
-
-                            Complete Expense History
-
-                        </li>
-
-                        <li>
-
-                            <i class="ri-check-line"></i>
-
-                            Monthly PDF Reports
-
-                        </li>
-
-                        <li>
-
-                            <i class="ri-check-line"></i>
-
-                            Secure Cloud Access
-
-                        </li>
-
+                        <li><i class="ri-check-line"></i> Daily Expense Tracking</li>
+                        <li><i class="ri-check-line"></i> Complete Expense History</li>
+                        <li><i class="ri-check-line"></i> Monthly PDF Reports</li>
+                        <li><i class="ri-check-line"></i> Secure Cloud Access</li>
                     </ul>
-
                 </div>
 
-                <!-- Right Side -->
-
                 <div class="login-right">
-
                     <div class="login-card">
-
-                        <h2>
-
-                            Login
-
-                        </h2>
-
-                        <p>
-
-                            Enter your account details below.
-
-                        </p>
+                        <h2>Login</h2>
+                        <p>Enter your account details below.</p>
 
                         <form id="loginForm">
-
                             <div class="input-group">
-
-                                <label for="loginEmail">
-
-                                    Email Address
-
-                                </label>
-
-                                <input
-                                    type="email"
-                                    id="loginEmail"
-                                    placeholder="Enter your email"
-                                    required>
-
+                                <label for="loginEmail">Email Address</label>
+                                <input type="email" id="loginEmail" placeholder="Enter your email" required>
                             </div>
 
                             <div class="input-group">
+                                <label for="loginPassword">Password</label>
+                                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                            </div>
 
-                                <label for="loginPassword">
-
-                                    Password
-
-                                </label>
-
-                                <input
-                                    type="password"
-                                    id="loginPassword"
-                                    placeholder="Enter your password"
-                                    required>
-
-                            </div> 
                             <div class="login-options">
-
                                 <label class="remember-me">
-
-                                    <input
-                                        type="checkbox"
-                                        id="rememberMe">
-
-                                    <span>
-                                        Remember Me
-                                    </span>
-
+                                    <input type="checkbox" id="rememberMe">
+                                    <span>Remember Me</span>
                                 </label>
-
-                                <a href="#"
-                                   class="forgot-password">
-
-                                    Forgot Password?
-
-                                </a>
-
+                                <a href="#" id="forgotPasswordBtn" class="forgot-password">Forgot Password?</a>
                             </div>
 
-                            <button
-                                type="submit"
-                                class="btn btn-primary login-btn">
-
-                                <i class="ri-login-circle-line"></i>
-
-                                Login
-
+                            <button type="submit" class="btn btn-primary login-btn" style="margin-bottom: 15px;">
+                                <i class="ri-login-circle-line"></i> Login
                             </button>
 
+                            <div class="google-login-wrapper" style="text-align: center; margin-bottom: 20px;">
+                                <span style="display: block; margin-bottom: 10px; color: #888; font-size: 14px;">Or</span>
+                                <button type="button" id="googleLoginBtn" class="btn btn-secondary" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; background-color: #ffffff; border: 1px solid #dadce0; color: #3c4043; padding: 10px; border-radius: 6px; cursor: pointer; font-weight: 500;">
+                                    <i class="ri-google-fill" style="color: #ea4335; font-size: 18px;"></i> Sign In with Google
+                                </button>
+                            </div>
                         </form>
 
                         <div class="login-footer">
-
                             <p>
-
                                 Don't have an account?
-
-                                <a href="signup.html">
-
-                                    Create Account
-
-                                </a>
-
+                                <a href="signup.html">Create Account</a>
                             </p>
-
-                            <a href="index.html"
-                               class="back-home">
-
-                                <i class="ri-arrow-left-line"></i>
-
-                                Back to Home
-
+                            <a href="index.html" class="back-home">
+                                <i class="ri-arrow-left-line"></i> Back to Home
                             </a>
-
                         </div>
 
                     </div>
-
                 </div>
 
             </div>
-
         </div>
-
     </section>
 
-    <!-- ========================= -->
-    <!-- Login Section Ends -->
-    <!-- ========================= -->
-
     <script type="module" src="firebase.js"></script>
-<script type="module" src="script-local.js"></script>
+    <script type="module" src="script-local.js"></script>
 
 </body>
 
